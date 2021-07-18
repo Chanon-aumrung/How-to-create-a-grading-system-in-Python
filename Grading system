@@ -1,0 +1,21 @@
+x = input('Score = ')
+Score = float(x)
+
+if(Score >= 80 and Score <= 100):
+   print("Your score is %0.2f, so you receive the grade A" %(Score))
+elif (Score >= 75 and Score < 80):
+  print("Your score is %0.2f, so you receive the grade B+" %(Score))
+elif (Score >= 70 and Score < 75):
+  print("Your score is %0.2f, so you receive the grade B" %(Score))
+elif (Score >= 65 and Score < 70):
+  print("Your score is %0.2f, so you receive the grade C+" %(Score))
+elif (Score >= 60 and Score < 65):
+  print("Your score is %0.2f, so you receive the grade C" %(Score))
+elif (Score >= 55 and Score < 60):
+  print("Your score is %0.2f, so you receive the grade D+" %(Score))
+elif (Score >= 50 and Score < 55):
+  print("Your score is %0.2f, so you receive the grade D" %(Score))
+elif (Score >= 0 and Score < 50):
+  print("Your score is %0.2f, so you receive the grade F" %(Score))
+else:
+  print("Error")
