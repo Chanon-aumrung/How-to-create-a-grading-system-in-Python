@@ -1,0 +1,22 @@
+student = int(input('How many students: '))
+
+for n in range(student):
+  print('Please input the score of student%d'%(n+1))
+  Test1 = int(input('Test1 score: '))
+  Test2 = int(input('Test2 score: '))
+  Test3 = int(input('Test3 score: '))
+  Test = Test1*0.3+Test2*0.3+Test3*0.4
+
+  if (Test >= 80 and Test <= 100):
+   print("Average score of student%d is %0.2f, Grade A \n" %(n, Test))
+  elif (Test >= 70 and Test < 80):
+    print("Average score of student%d is %0.2f, Grade B \n" %(n, Test))
+  elif (Test >= 60 and Test < 70):
+    print("Average score of student%d is %0.2f, Grade C \n" %(n, Test))
+  elif (Test >= 50 and Test < 60):
+    print("Average score of student%d is %0.2f, Grade D \n" %(n, Test))
+  elif (Test >= 00 and Test < 50):
+    print("Average score of student%d is %0.2f, Grade F \n" %(n, Test))
+  else:
+    print("Error")
+  n = n+1
